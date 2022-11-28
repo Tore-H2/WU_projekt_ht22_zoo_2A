@@ -45,7 +45,7 @@ nav{
 h1{
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 1vh;
+    margin: 5px;
 }
 
 #landing{
@@ -60,9 +60,23 @@ h1{
 #right_section{
     grid-area: rs;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #left_section{
     grid-area: ls;
     background-color: blueviolet;
+}
+
+.info_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: aqua;
 }
