@@ -20,26 +20,20 @@ nav{
     height: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: green;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    column-gap: 10px;
+    padding-bottom: 2px;
 }
 
 a{
-    flex-grow: 1;
-
+    width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
-
-.separator{
-    width: 5px;
-    background: linear-gradient(to right, 
-	                              transparent 0%, 
-	                              transparent calc(50% - 0.81px), 
-	                              black calc(50% - 0.8px), 
-	                              black calc(50% + 0.8px), 
-	                              transparent calc(50% + 0.81px), 
-	                              transparent 100%);
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: green;
 }
 
 h1{
