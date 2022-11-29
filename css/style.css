@@ -7,13 +7,13 @@ header{
     display: flex;
     flex-direction: column;
     height: 12vh;
+    background-image: url("../img/persons/avatar-a4d4b8b36e435311d8e7e13a8e207118.jpg");
 }
 
 #banner{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-image: url("../img/persons/avatar-a4d4b8b36e435311d8e7e13a8e207118.jpg");
 }
 
 nav{
@@ -24,7 +24,7 @@ nav{
     background-color: green;
 }
 
-.button{
+a{
     flex-grow: 1;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
