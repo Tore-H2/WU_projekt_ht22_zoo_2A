@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    background-image: url("../img/background/forest_painting.png");
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -57,7 +61,6 @@ h2{
 
 #right_section{
     grid-area: rs;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +70,6 @@ h2{
 
 #left_section{
     grid-area: ls;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,7 +87,7 @@ h2{
     border-radius: 5px;
     border: 2px solid black;
     row-gap: 5px;
-    background-color: aqua;
+    background:rgba(255, 255, 255, 0.399);
 }
 
 .info_list{
@@ -112,4 +114,34 @@ h2{
     padding-right: 50px;
     padding-top: 20px;
     row-gap: 10px;
+}
+
+#people_animals{
+    text-align: center;
+}
+
+.people_animals{
+    display: flex;
+    margin: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image_box{
+    height: 200px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    row-gap: 5px;
+    background:rgba(255, 255, 255, 0.399);
+}
+
+.image_box_image{
+    height: 75px;
+    width: auto;
+    border-radius: 37.5px;
 }
