@@ -9,8 +9,11 @@ body{
 
 header{
     display: flex;
-    flex-direction: column;
-    height: 12vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+    height: 10vh;
     background-image: url("../img/persons/avatar-a4d4b8b36e435311d8e7e13a8e207118.jpg");
 }
 
@@ -21,10 +24,11 @@ header{
 }
 
 nav{
-    height: 20px;
+    flex-grow: 1;
+    height: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:end;
     padding-left: 10px;
     padding-right: 10px;
     column-gap: 10px;
@@ -32,12 +36,15 @@ nav{
 }
 
 a{
-    width: 100%;
+    width: min(50%, 200px);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
     text-decoration: none;
+    color: black;
     border-radius: 10px;
     background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
@@ -52,7 +59,7 @@ h2{
 
 #landing{
     width: 100%;
-    height: 88vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
@@ -63,9 +70,9 @@ h2{
     grid-area: rs;
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 #left_section{
@@ -73,16 +80,14 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    row-gap: 10px;
+    padding: 20px;
 }
 
 .info_box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
     border-radius: 5px;
     border: 2px solid black;
@@ -118,9 +123,31 @@ h2{
 
 #people_animals{
     text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "vd"
+    "an"
+    "vp"
+    "pe";
 }
 
-.people_animals{
+#vd{
+    grid-area: vd;
+}
+
+#animals{
+    grid-area: an;
+}
+
+#vp{
+    grid-area: vp;
+}
+
+#personel{
+    grid-area: pe;
+}
+
+.flex_wrapper_container{
     display: flex;
     margin: 10px;
     column-gap: 10px;
@@ -144,4 +171,16 @@ h2{
     height: 75px;
     width: auto;
     border-radius: 37.5px;
+}
+
+.extended_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    row-gap: 5px;
+    background:rgba(255, 255, 255, 0.399);
 }
