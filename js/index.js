@@ -35,7 +35,7 @@ div.addEventListener("click", function() {
         };
         xhr.send();
     } else {
-        this.className = "info_box";
+        this.className = "closed_menu";
         // Set the element's innerHTML back to the original HTML code
         div.innerHTML = originalHTML;
     }

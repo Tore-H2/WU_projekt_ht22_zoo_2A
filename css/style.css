@@ -14,7 +14,7 @@ header{
     align-items: flex-end;
     padding: 5px;
     height: 10vh;
-    background-image: url("../img/persons/avatar-a4d4b8b36e435311d8e7e13a8e207118.jpg");
+    background:rgba(45, 9, 9, 0.9);
 }
 
 #banner{
@@ -89,7 +89,7 @@ h2{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 10vh;
+    min-height: fit-content;
     border-radius: 5px;
     border: 2px solid black;
     row-gap: 5px;
@@ -119,7 +119,11 @@ h2{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
+    margin: 20px;
     row-gap: 10px;
+    background: rgba(255, 255, 255, 0.399);
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 #people_animals{
@@ -150,9 +154,11 @@ h2{
 
 .flex_wrapper_container{
     display: flex;
-    margin: 10px;
+    margin: 20px;
+    row-gap: 10px;
     column-gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .image_box{
@@ -174,12 +180,28 @@ h2{
     border-radius: 37.5px;
 }
 
+#icon{
+    height: 80px;
+    width: 80px;
+}
+
 .extended_menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    row-gap: 5px;
+    background:rgba(255, 255, 255, 0.399);
+}
+
+.closed_menu{
+    height: 100px;
+    width: 100%;
+    text-align: center;
     border-radius: 5px;
     border: 2px solid black;
     row-gap: 5px;
